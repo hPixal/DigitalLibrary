@@ -17,4 +17,12 @@
         <li>Your template at <code>/home/nahuelg/Github/DigitalLibrary/templates/home_page/index.html.twig</code></li>
     </ul>
 </div>
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="root"></div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
 {% endblock %}
