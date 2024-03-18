@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  entry: "./assets/js/app.js",
+  entry: "./assets/js/app.tsx",
   output: {
     path: path.resolve(__dirname, "public/build"),
     filename: "bundle.js",
@@ -10,15 +10,23 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env", "@babel/preset-react"],
+            presets: [
+              "@babel/preset-env",
+              "@babel/preset-react",
+              ["@babel/preset-typescript", { allowNamespaces: true }],
+            ],
+            plugins: ["@babel/plugin-proposal-class-properties"],
           },
         },
       },
     ],
+  },
+  resolve: {
+    extensions: [".ts", ".tsx", ".js"],
   },
 };
