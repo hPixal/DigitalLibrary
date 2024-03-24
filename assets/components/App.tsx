@@ -4,6 +4,7 @@ import Bibliobar from "./Bibliobar";
 import "../styles/App.css";
 
 function App() {
+  // hook
   const [count, setCount] = useState(0);
   return (
     <>
