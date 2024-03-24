@@ -1,0 +1,21 @@
+/* CSS for Bibliobar component */
+
+/* Navbar background color */
+.bg-body-tertiary {
+  background-color: #333; /* Change to your preferred background color */
+}
+
+/* Navbar brand text color */
+.navbar-brand {
+  color: #fff; /* Change to your preferred text color */
+}
+
+/* Navbar links text color */
+.navbar-nav .nav-link {
+  color: #fff; /* Change to your preferred text color */
+}
+
+/* Navbar links hover color */
+.navbar-nav .nav-link:hover {
+  color: #ccc; /* Change to your preferred hover color */
+}
