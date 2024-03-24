@@ -4,6 +4,7 @@
     "@babel/preset-typescript": "^7.23.3",
     "@vitejs/plugin-react": "^4.2.1",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "vite": "^5.1.6"
   },
