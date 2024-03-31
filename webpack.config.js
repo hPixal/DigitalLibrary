@@ -1,6 +1,7 @@
 const path = require("path");
 
 module.exports = {
+  cache: false,
   mode: "development",
   entry: "./assets/js/app.tsx",
   output: {
